@@ -1,0 +1,17 @@
+commit_regex='^(feat|fix|docs|style|refactor|test|chore|perf|build|ci|revert)(\(.+\))?: .{1,50}'
+
+if ! grep -qE "$commit_regex" "$1"; then
+    echo "❌ Invalid commit message format!"
+    echo ""
+    echo "📋 Your commit message should follow this format:"
+    echo "   <type>(<scope>): <description>"
+    echo ""
+    echo "📝 Examples:"
+    echo "   feat: add user authentication"
+    echo "   fix(ui): resolve button styling issue"
+    echo "   docs: update README installation steps"
+    echo ""
+    echo "✅ Valid types: feat, fix, docs, style, refactor, test, chore, perf, build, ci, revert"
+    echo ""
+    exit 1
+fi
