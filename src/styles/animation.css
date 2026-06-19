@@ -1,0 +1,49 @@
+@keyframes partners-marquee {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+.partners-marquee-track {
+    animation: partners-marquee 28s linear infinite;
+    width: max-content;
+}
+
+@media (max-width: 1023px) {
+    .partners-marquee-track {
+        animation-duration: 20s;
+    }
+}
+
+.partners-marquee-track:hover {
+    animation-play-state: paused;
+}
+
+@keyframes new-products-marquee {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+.new-products-marquee-track {
+    animation: new-products-marquee 32s linear infinite;
+    width: max-content;
+}
+
+@media (max-width: 1023px) {
+    .new-products-marquee-track {
+        animation-duration: 22s;
+    }
+}
+
+.new-products-marquee-track:hover {
+    animation-play-state: paused;
+}
