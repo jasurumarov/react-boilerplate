@@ -1,9 +1,10 @@
 import React from "react";
+import AboutSection from "@/components/features/contact/about/AboutSection";
 
 const ContactPage: React.FC = () => {
     return (
         <main>
-            <h2>Contact Page</h2>
+            <AboutSection />
         </main>
     );
 };
